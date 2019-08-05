@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>JavaScript Interview Questions</title>
+</head>
+<body>
+    <!--Grid container-->
+    <div class="main-body">
+        <!--Navbar on the left-->
+        <nav id="navbar">
+            <header>Table of Contents</header>
+            <!--Local reference to the id-->
+            <a href="#Introduction" class="nav-link">1.1: Introduction</a>
+            <a href="#Variables" class="nav-link">1.2: Variables</a>
+            <a href="#Constants" class="nav-link">1.3: Constants</a>
+            <a href="#Primitive" class="nav-link">1.4: Primitive Types</a>
+            <a href="#Objects" class="nav-link">1.5: Objects</a>
+            <a href="#Arrays" class="nav-link">1.5: Arrays</a>
+            <a href="#Functions" class="nav-link">1.5: Functions</a>
+            <a href="#Types" class="nav-link">1.5: Types of Functions</a>
+
+        </nav>
+        <!--Most of the content will go here-->
+        <main id="main-doc">
+            <section class="main-section" id="Introduction">
+                <header>Introduction</header>
+                <p>JavaScript was introduced in 1995 as a way to add programs to web pages in the Netscape Navigator browser. The language has since been adopted by all other major graphical web browsers. It has made modern web applications possible—applications with which you can interact directly without doing a page reload for every action. JavaScript is also used in more traditional websites to provide various forms of interactivity and cleverness.</p>
+                <p>It is important to note that JavaScript has almost nothing to do with the programming language named Java. The similar name was inspired by marketing considerations rather than good judgment. When JavaScript was being introduced, the Java language was being heavily marketed and was gaining popularity. Someone thought it was a good idea to try to ride along on this success. Now we are stuck with the name.</p>
+            </section>
+            <section class="main-section" id="Variables">
+                <header>Variables</header>
+                <p><span class="bold">The latest ECMAScript(ES6) standard defines seven data types: </span> Out of which six data types are Primitive(predefined).</p>
+                <ul>
+                    <li><span class="bold">Numbers:</span> 5, 6.5, 7 etc.</li>
+                    <li><span class="bold">String:</span> “Hello GeeksforGeeks” etc.</li>
+                    <li><span class="bold">Boolean:</span> Represent a logical entity and can have two values: true or false.</li>
+                    <li><span class="bold">Null:</span> This type has only one value : null.</li>
+                    <li><span class="bold">Undefined:</span> A variable that has not been assigned a value is undefined.</li>
+                    <li><span class="bold">Object:</span> It is the most important data-type and forms the building blocks for modern JavaScript. We will learn about these data types in details in further articles.</li>
+                </ul>
+                <p>Variables in JavaScript are containers which hold reusable data. It is the basic unit of storage in a program.</p>
+                <ul>
+                    <li>The value stored in a variable can be changed during program execution.</li>
+                    <li>A variable is only a name given to a memory location, all the operations done on the variable effects that memory location.</li>
+                    <li>In JavaScript, all the variables must be declared before they can be used.</li>
+                </ul>
+                <p><span class="bold">Before ES2015,</span> JavaScript variables were solely declared using the var keyword followed by the name of the variable and semi-colon. <br/> <br/> We can initialize the variables either at the time of declaration or also later when we want to use them. Below are some examples of declaring and initializing variables in JavaScript:</p>
+                <code> // declaring single variable <br /> var name; <br/><br/> // declaring multiple variables </br> var name, title, num <br/><br/> // initializng variables <br/> var name ="Lasha"; <br/> name ="Lasha";</code> 
+                <p><span class="bold">After ES2015,</span> we now have two new variable containers : <span class="bold">let</span> and <span class="bold">const.</span> Now we shall look at both of them one by one. The variable type Let shares lots of similarities with var but unlike var it has scope constraints. Let’s make use of let variable:</p>
+                <code> // let variable <br /> let x; //undefined <br/> let name="Lasha"; <br/> <br/> // declaring multiple values </br> let a=1, b=2, c=3;<br/><br/> // assigment <br/> let a= 3; <br/> a ="Lasha"; // works same as var </code> 
+            </section>
+            <section class="main-section" id="Constants">
+                <header>Constants</header>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi ipsa illo repudiandae nesciunt pariatur dolorem enim aut. Sapiente aperiam optio in veritatis accusantium distinctio nihil ipsa. Iusto expedita molestiae in.</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum, non. Et delectus, totam velit fugiat dignissimos ut ipsa quae, ducimus saepe sed sapiente enim non necessitatibus blanditiis iure quam eaque.</p>
+                <code>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem maxime, placeat unde reiciendis fuga, facere quasi dolor doloribus corporis aspernatur, nobis voluptatem! Porro, voluptate quibusdam asperiores sed impedit tempora iusto.</code>
+            </section>
+            <section class="main-section" id="Primitive">
+                <header>Primitive</header>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium obcaecati earum, quidem ex temporibus reiciendis nulla, quas iste cumque necessitatibus asperiores! Aperiam earum eaque quo voluptas ipsa esse sed ullam.</p>
+                <code>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem maxime, placeat unde reiciendis fuga, facere quasi dolor doloribus corporis aspernatur, nobis voluptatem! Porro, voluptate quibusdam asperiores sed impedit tempora iusto.</code>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio animi libero eum, dolores quo voluptatibus necessitatibus velit ad, illum, laborum quisquam! Porro a pariatur perferendis tenetur libero. Id, minima ab!</p>
+            </section>
+            <section class="main-section" id="Objects">
+                <header>Objects</header>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa illo similique aperiam sapiente rerum libero consectetur sit doloremque deserunt culpa, totam quasi dignissimos, vero voluptas, rem eius ducimus dolores! Nisi?</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat veritatis quas maxime dolor ipsam repudiandae, esse dicta aliquam maiores veniam enim tempore nemo in animi nobis quibusdam excepturi nulla! Illo.</p>
+                <code>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem maxime, placeat unde reiciendis fuga, facere quasi dolor doloribus corporis aspernatur, nobis voluptatem! Porro, voluptate quibusdam asperiores sed impedit tempora iusto.</code>
+            </section>
+            <section class="main-section" id="Arrays">
+                <header>Arrays</header>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa illo similique aperiam sapiente rerum libero consectetur sit doloremque deserunt culpa, totam quasi dignissimos, vero voluptas, rem eius ducimus dolores! Nisi?</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat veritatis quas maxime dolor ipsam repudiandae, esse dicta aliquam maiores veniam enim tempore nemo in animi nobis quibusdam excepturi nulla! Illo.</p>
+                <code>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem maxime, placeat unde reiciendis fuga, facere quasi dolor doloribus corporis aspernatur, nobis voluptatem! Porro, voluptate quibusdam asperiores sed impedit tempora iusto.</code>
+            </section>
+            <section class="main-section" id="Functions">
+                <header>Types of Functions</header>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa illo similique aperiam sapiente rerum libero consectetur sit doloremque deserunt culpa, totam quasi dignissimos, vero voluptas, rem eius ducimus dolores! Nisi?</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat veritatis quas maxime dolor ipsam repudiandae, esse dicta aliquam maiores veniam enim tempore nemo in animi nobis quibusdam excepturi nulla! Illo.</p>
+                <code>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem maxime, placeat unde reiciendis fuga, facere quasi dolor doloribus corporis aspernatur, nobis voluptatem! Porro, voluptate quibusdam asperiores sed impedit tempora iusto.</code>
+            </section>
+            <section class="main-section" id="Types">
+                <header>Types of Functions</header>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa illo similique aperiam sapiente rerum libero consectetur sit doloremque deserunt culpa, totam quasi dignissimos, vero voluptas, rem eius ducimus dolores! Nisi?</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat veritatis quas maxime dolor ipsam repudiandae, esse dicta aliquam maiores veniam enim tempore nemo in animi nobis quibusdam excepturi nulla! Illo.</p>
+                <code>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem maxime, placeat unde reiciendis fuga, facere quasi dolor doloribus corporis aspernatur, nobis voluptatem! Porro, voluptate quibusdam asperiores sed impedit tempora iusto.</code>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
