@@ -1,103 +1,267 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/hopscotch.min.css">
-    <link rel="stylesheet" href="./css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/hopscotch.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel='icon' href='icon.png' type='image/x-icon'/ >
     <title>JavaScript Interview Questions</title>
-</head>
-<body>
-    <!--Grid container-->
+  </head>
+  <body>
     <div class="main-body">
-        <!--Navbar on the left-->
-        <nav id="navbar">
-            <header>Table of Contents</header>
-            <!--Local reference to the id-->
-            <a href="#Introduction" class="nav-link">1.1: Introduction</a>
-            <a href="#Variables" class="nav-link">1.2: Variables</a>
-            <a href="#Constants" class="nav-link">1.3: Constants</a>
-            <a href="#Scope" class="nav-link">1.4: Scope</a>
-            <a href="#Objects" class="nav-link">1.5: Objects</a>
-            <a href="#Arrays" class="nav-link">1.6: Arrays</a>
-            <a href="#Comparison" class="nav-link">1.7: Comparison Operators</a>
-            <a href="#Closure" class="nav-link">1.8: Closure</a>
+      <nav id="navbar">
+        <header>Table of Contents</header>
+        <a href="#Introduction" class="nav-link">1.1: Introduction</a>
+        <a href="#Variables" class="nav-link">1.2: Variables</a>
+        <a href="#Constants" class="nav-link">1.3: Constants</a>
+        <a href="#Scope" class="nav-link">1.4: Scope</a>
+        <a href="#Objects" class="nav-link">1.5: Objects</a>
+        <a href="#Arrays" class="nav-link">1.6: Arrays</a>
+        <a href="#Comparison" class="nav-link">1.7: Comparison Operators</a>
+        <a href="#Closure" class="nav-link">1.8: Closure</a>
+      </nav>
+      <main id="main-doc">
+        <section class="main-section" id="Introduction">
+          <header>Introduction</header>
+          <p>
+            JavaScript was introduced in 1995 as a way to add programs to web
+            pages in the Netscape Navigator browser. The language has since been
+            adopted by all other major graphical web browsers. It has made
+            modern web applications possible—applications with which you can
+            interact directly without doing a page reload for every action.
+            JavaScript is also used in more traditional websites to provide
+            various forms of interactivity and cleverness.
+          </p>
+          <p>
+            It is important to note that JavaScript has almost nothing to do
+            with the programming language named Java. The similar name was
+            inspired by marketing considerations rather than good judgment. When
+            JavaScript was being introduced, the Java language was being heavily
+            marketed and was gaining popularity. Someone thought it was a good
+            idea to try to ride along on this success. Now we are stuck with the
+            name.
+          </p>
+        </section>
+        <section class="main-section" id="Variables">
+          <header>Variables</header>
+          <p>
+            <span class="bold"
+              >The latest ECMAScript(ES6) standard defines seven data types:
+            </span>
+            Out of which six data types are Primitive(predefined).
+          </p>
+          <ul>
+            <li><span class="bold">Numbers:</span> 1, 6.5, 7 etc.</li>
+            <li><span class="bold">String:</span> “Hello NoobMaster69" etc.</li>
+            <li>
+              <span class="bold">Boolean:</span> Represent a logical entity and
+              can have two values: true or false.
+            </li>
+            <li>
+              <span class="bold">Null:</span> This type has only one value :
+              null.
+            </li>
+            <li>
+              <span class="bold">Undefined:</span> A variable that has not been
+              assigned a value is undefined.
+            </li>
+            <li>
+              <span class="bold">Object:</span> It is the most important
+              data-type and forms the building blocks for modern JavaScript. We
+              will learn about these data types in details in further articles.
+            </li>
+          </ul>
+          <p>
+            Variables in JavaScript are containers which hold reusable data. It
+            is the basic unit of storage in a program.
+          </p>
+          <ul>
+            <li>
+              The value stored in a variable can be changed during program
+              execution.
+            </li>
+            <li>
+              A variable is only a name given to a memory location, all the
+              operations done on the variable effects that memory location.
+            </li>
+            <li>
+              In JavaScript, all the variables must be declared before they can
+              be used.
+            </li>
+          </ul>
+          <p>
+            <span class="bold">Before ES2015,</span> JavaScript variables were
+            solely declared using the var keyword followed by the name of the
+            variable and semi-colon. <br />
+            <br />
+            We can initialize the variables either at the time of declaration or
+            also later when we want to use them. Below are some examples of
+            declaring and initializing variables in JavaScript:
+          </p>
+          <pre><code> 
+    /* declaring single variable */  
+    var name; 
 
-        </nav>
-        <!--Most of the content will go here-->
-        <main id="main-doc">
-            <section class="main-section" id="Introduction">
-                <header>Introduction</header>
-                <p>JavaScript was introduced in 1995 as a way to add programs to web pages in the Netscape Navigator browser. The language has since been adopted by all other major graphical web browsers. It has made modern web applications possible—applications with which you can interact directly without doing a page reload for every action. JavaScript is also used in more traditional websites to provide various forms of interactivity and cleverness.</p>
-                <p>It is important to note that JavaScript has almost nothing to do with the programming language named Java. The similar name was inspired by marketing considerations rather than good judgment. When JavaScript was being introduced, the Java language was being heavily marketed and was gaining popularity. Someone thought it was a good idea to try to ride along on this success. Now we are stuck with the name.</p>
-            </section>
-            
-            <section class="main-section" id="Variables">
-                <header>Variables</header>
-                <p><span class="bold">The latest ECMAScript(ES6) standard defines seven data types: </span> Out of which six data types are Primitive(predefined).</p>
-                <ul>
-                    <li><span class="bold">Numbers:</span> 1, 6.5, 7 etc.</li>
-                    <li><span class="bold">String:</span> “Hello NoobMaster69" etc.</li>
-                    <li><span class="bold">Boolean:</span> Represent a logical entity and can have two values: true or false.</li>
-                    <li><span class="bold">Null:</span> This type has only one value : null.</li>
-                    <li><span class="bold">Undefined:</span> A variable that has not been assigned a value is undefined.</li>
-                    <li><span class="bold">Object:</span> It is the most important data-type and forms the building blocks for modern JavaScript. We will learn about these data types in details in further articles.</li>
-                </ul>
-                <p>Variables in JavaScript are containers which hold reusable data. It is the basic unit of storage in a program.</p>
-                <ul>
-                    <li>The value stored in a variable can be changed during program execution.</li>
-                    <li>A variable is only a name given to a memory location, all the operations done on the variable effects that memory location.</li>
-                    <li>In JavaScript, all the variables must be declared before they can be used.</li>
-                </ul>
-                <p><span class="bold">Before ES2015,</span> JavaScript variables were solely declared using the var keyword followed by the name of the variable and semi-colon. <br/> <br/> We can initialize the variables either at the time of declaration or also later when we want to use them. Below are some examples of declaring and initializing variables in JavaScript:</p>
-                <pre><code> /* declaring single variable */ <br /> var name; <br/><br/> /* declaring multiple variables */ </br> var name, title, num <br/><br/> /* initializng variables */ <br/> var name = "Lasha"; <br/> name = "Lasha";</code></pre>
-                <p><span class="bold">After ES2015,</span> we now have two new variable containers : <span class="bold">let</span> and <span class="bold">const.</span> Now we shall look at both of them one by one. The variable type Let shares lots of similarities with var but unlike var it has scope constraints. Let’s make use of let variable:</p>
-                <pre><code> /* let variable */ <br /> let x; //undefined <br/> let name = "Lasha"; <br/> <br/> /* declaring multiple values */ </br> let a=1, b=2, c=3;<br/><br/> /* assigment */ <br/> let a = 3; <br/> a="Lasha"; /* works same as var */</code></pre>
-            </section>
+    /* declaring multiple variables */  
+    var name, title, num 
 
-            <section class="main-section" id="Constants">
-                <header>Constants</header>
-                <p>Constants are block-scoped, much like variables defined using the let statement. The value of a constant can't be changed through reassignment, and it can't be redeclared.</p>
-                <p>Naming a <span class="bold">const</span> in JavaScript follow the same rule of naming a variable, except that the const keyword is always required, even for global constants.</p>
-                <pre><code>  /* const variable */ <br /> const name = "Lasha"; <br/> name = "Selly"; /* will give us an error. */ </code></pre>
-            </section>
+    /* initializng variables */ 
+    var name = "Lasha"; 
+    name = "Lasha";
+                </code></pre>
+          <p>
+            <span class="bold">After ES2015,</span> we now have two new variable
+            containers : <span class="bold">let</span> and
+            <span class="bold">const.</span> Now we shall look at both of them
+            one by one. The variable type Let shares lots of similarities with
+            var but unlike var it has scope constraints. Let’s make use of let
+            variable:
+          </p>
+          <pre><code> 
+    /* let variable */  
+    let x; //undefined 
+    let name = "Lasha"; 
+    
+    /* declaring multiple values */  
+    let a=1, b=2, c=3 
+    
+    /* assigment */ 
+    let a = 3; 
+    a="Lasha"; // works same as var
+            </code></pre>
+        </section>
+        <section class="main-section" id="Constants">
+          <header>Constants</header>
+          <p>
+            Constants are block-scoped, much like variables defined using the
+            let statement. The value of a constant can't be changed through
+            reassignment, and it can't be redeclared.
+          </p>
+          <p>
+            Naming a <span class="bold">const</span> in JavaScript follow the
+            same rule of naming a variable, except that the const keyword is
+            always required, even for global constants.
+          </p>
+          <pre><code>  
+                   
+    /* const variable */  
+    const name = "Lasha";  
+    name = "Selly"; // will give us an error
+             </code></pre>
+        </section>
+        <section class="main-section" id="Scope">
+          <header>What is Scope?</header>
+          <p>
+            Scope determines the visibility or accessibility of a variable or
+            other resource in the area of your code.
+          </p>
+          <p>
+            There's only one <span class="bold">Global</span> scope in the
+            JavaScript document. The area outside all the functions is consider
+            the global scope and the variables defined inside the global scope
+            can be accessed and altered in any other scopes.
+          </p>
+          <pre><code> 
+    /* global scope */ 
+    let fruit = "apple";  
+    console.log(fruit);  /* apple */   
+    function getFruit() {     
+        /* fruit is accesable here */
+        console.log(fruit);  
+    }  
+    getFruit(); /* apple */ 
+            </code></pre>
+          <p>
+            Variables declared inside the functions become
+            <span class="bold">Local</span> to the function and are considered
+            in the corresponding local scope. Every Functions has its own scope.
+            Same variable can be used in different functions because they are
+            bound to the respective functions and are not mutual visible.
+          </p>
+          <pre><code> 
+                   
+    function foo1() {
+    /* local scope 1 */     
+        function foo2() {       
+            /* local scope 2 */
+        }  
+    }  
+    /* global scope */  
+    function foo3() {
+        /* local scope 3 */  
+    }  
+    /* global scope */
 
-            <section class="main-section" id="Scope">
-                <header>What is Scope?</header>
-                <p>Scope determines the visibility or accessibility of a variable or other resource in the area of your code.</p>
-                <p>There's only one <span class="bold">Global</span> scope in the JavaScript document. The area outside all the functions is consider the global scope and the variables defined inside the global scope can be accessed and altered in any other scopes.</p>
-                <pre><code> /* global scope */ <br /> let fruit = "apple"; <br/> console.log(fruit); /* apple */ <br/> <br/> function getFruit() { <br/>    console.log(fruit);  /* fruit is accesable here */
- } </br> <br/> getFruit(); /* apple */ </code></pre>
-                <p>Variables declared inside the functions become <span class="bold">Local</span> to the function and are considered in the corresponding local scope. Every Functions has its own scope. Same variable can be used in different functions because they are bound to the respective functions and are not mutual visible.</p>
-                <pre><code> function foo1() {
-    /* local scope 1 */ <br/>    function foo2() { <br/>      /* local scope 2 */
-    } <br/> }</br> <br/> /* global scope */ <br/> function foo3() { <br/>    /* local scope 3 */ <br/> } <br/><br/> /* global scope */</code></pre>
-            <p>Local scope can be divided into function scope and block scope. The concept of block scope is introduced in <span class="bold">ES2015</span> together with the new ways to declare variables -- <span class="bold">const</span> and <span class="bold">let</span>.</p>
-            </section>
-
-            <section class="main-section" id="Objects">
-                <header>Objects</header>
-                <p>Objects in JavaScript, just as in many other programming languages, can be compared to objects in real life. The concept of objects in JavaScript can be understood with real life, tangible objects. <br/><br/>
-                In JavaScript, an object is a standalone entity, with properties and type. Compare it with a cup, for example. A cup is an object, with properties. A cup has a color, a design, weight, a material it is made of, etc. The same way, JavaScript objects can have properties, which define their characteristics.</p>
-                <p>A JavaScript object has properties associated with it. A property of an object can be explained as a variable that is attached to the object. Object properties are basically the same as ordinary JavaScript variables, except for the attachment to objects. The properties of an object define the characteristics of the object.</p>
-                <pre><code>
+</code></pre>
+          <p>
+            Local scope can be divided into function scope and block scope. The
+            concept of block scope is introduced in
+            <span class="bold">ES2015</span> together with the new ways to
+            declare variables -- <span class="bold">const</span> and
+            <span class="bold">let</span>.
+          </p>
+        </section>
+        <section class="main-section" id="Objects">
+          <header>Objects</header>
+          <p>
+            Objects in JavaScript, just as in many other programming languages,
+            can be compared to objects in real life. The concept of objects in
+            JavaScript can be understood with real life, tangible objects.
+            <br /><br />
+            In JavaScript, an object is a standalone entity, with properties and
+            type. Compare it with a cup, for example. A cup is an object, with
+            properties. A cup has a color, a design, weight, a material it is
+            made of, etc. The same way, JavaScript objects can have properties,
+            which define their characteristics.
+          </p>
+          <p>
+            A JavaScript object has properties associated with it. A property of
+            an object can be explained as a variable that is attached to the
+            object. Object properties are basically the same as ordinary
+            JavaScript variables, except for the attachment to objects. The
+            properties of an object define the characteristics of the object.
+          </p>
+          <pre><code>
     const myCar = new Object();
     myCar.make = "Ford";
     myCar.model = "Mustang";
     myCar.year = 1969;
+
 </code></pre>
-    <p>Unassigned properties of an object are undefined (and not null).</p>
-    <pre><code>    myCar.color; /* undefined */</code></pre>
-    <p>An object property name can be any valid JavaScript string, or anything that can be converted to a string, including the empty string. However, any property name that is not a valid JavaScript identifier (for example, a property name that has a space or a hyphen, or that starts with a number) can only be accessed using the square bracket notation. This notation is also very useful when property names are to be dynamically determined (when the property name is not determined until runtime). <br/> <br/> Examples are as follows:</p>
-    <pre><code>
+          <p>
+            Unassigned properties of an object are undefined (and not null).
+          </p>
+          <pre><code>    
+    myCar.color; /* undefined */
+            </code></pre>
+          <p>
+            An object property name can be any valid JavaScript string, or
+            anything that can be converted to a string, including the empty
+            string. However, any property name that is not a valid JavaScript
+            identifier (for example, a property name that has a space or a
+            hyphen, or that starts with a number) can only be accessed using the
+            square bracket notation. This notation is also very useful when
+            property names are to be dynamically determined (when the property
+            name is not determined until runtime). <br />
+            <br />
+            Examples are as follows:
+          </p>
+          <pre><code>
     /* four variables are created and assigned in a single go, separated by commas */
     const myObj = new Object(),
-        str = 'myString',
-        rand = Math.random(),
-        obj = new Object();
-    
+    str = 'myString',
+    rand = Math.random(),
+    obj = new Object();
+
     myObj.type              = 'Dot syntax';
     myObj['date created']   = 'String with space';
     myObj[str]              = 'String value';
@@ -107,58 +271,125 @@
     
     console.log(myObj);
     </code></pre>
-            </section>
-
-            <section class="main-section" id="Arrays">
-                <header>Arrays</header>
-                <p>An array is a special variable, which can hold more than one value at a time.
-                If you have a list of items (a list of anime series, for example), storing the animes in single variables could look like this:</p>
-                <pre><code>
+        </section>
+        <section class="main-section" id="Arrays">
+          <header>Arrays</header>
+          <p>
+            An array is a special variable, which can hold more than one value
+            at a time. If you have a list of items (a list of anime series, for
+            example), storing the animes in single variables could look like
+            this:
+          </p>
+          <pre><code>
     const anime1 = "One Piece";
     const anime2 = "Steins;Gate";
     const anime3 = "Berserk";
                 </code></pre>
-                <p>However, what if you want to loop through the animes and find a specific one? And what if you had not 3 animes, but 300? The solution is an array! An array can hold many values under a single name, and you can access the values by referring to an index number.</p>
-                <pre><code>
+          <p>
+            However, what if you want to loop through the animes and find a
+            specific one? And what if you had not 3 animes, but 300? The
+            solution is an array! An array can hold many values under a single
+            name, and you can access the values by referring to an index number.
+          </p>
+          <pre><code>
     const animes = ["One Piece", "Steins;Gate", "Berserk"];
                 </code></pre>
-                <p>You access an array element by referring to the index number.This statement accesses the value of the first element in animes: <br/><br/>
-                    <span style=font-style:italic><span class="bold">Note: Array indexes start with 0.
-                    [0] is the first element. [1] is the second element.</span></span></p>
-                <pre><code>
+          <p>
+            You access an array element by referring to the index number.This
+            statement accesses the value of the first element in animes:
+            <br /><br />
+            <span style="font-style: italic;"
+              ><span class="bold"
+                >Note: Array indexes start with 0. [0] is the first element. [1]
+                is the second element.</span
+              ></span
+            >
+          </p>
+          <pre><code>
     const name1 = animes[0]; /* One Piece */
     const name2 = animes[1]; /* Steins;Gate */
     const name3 = animes[2]; /* Berserk */
                 </code></pre>
-                <p>The <span class="bold">length</span> property of an array returns the length of an array (the number of array elements).</p>
-                <pre><code>
+          <p>
+            The <span class="bold">length</span> property of an array returns
+            the length of an array (the number of array elements).
+          </p>
+          <pre><code>
     const fruits = ["Banana", "Orange", "Apple", "Kiwi"];
     fruits.length;   /* the length of fruits is 4 */
                 </code></pre>
-            </section>
-
-            <section class="main-section" id="Comparison">
-                <header> Comparison Operators</header>
-                <p>In most of my JavaScript interviews for a Front-End Developer position, I have been asked this exact question. What is the difference between comparing variables using "==" and "===" operator? <br/> <br/> We will see couple of example of both operator in this article, to understand difference between them much better.</p>
-                <p>Since JavaScript support both strict equality and type-converting equality, it's important to know which operator is used for which operation. As I said that, === takes type of variable in consideration, while == make type correction based upon values of variables, following are couple of more differences between "==" and "===" operator in JavaScript programming language :</p>
-                <p>"==" operator is known as type coercion operator and anytime if both values are same and compared using ==operator, type coercion happens. On the other hand === is known as strictly equality operator. It's much similar Java's equality operator (==), which gives compilation error if you compare two variables, whose types are not compatible to each other. In fact, you should always use "===" operator for comparing variables or just for any comparison. </p>
-                <p>When we compare two variables of different type e.g. a boolean with a string or a number with String using == operator, it automatically converts one type into another and return value based upon content equality. This will be much clear with following example of == and === operator in JavaScript :</p>
-                <pre><code>
+        </section>
+        <section class="main-section" id="Comparison">
+          <header>Comparison Operators</header>
+          <p>
+            In most of my JavaScript interviews for a Front-End Developer
+            position, I have been asked this exact question. What is the
+            difference between comparing variables using "==" and "==="
+            operator? <br />
+            <br />
+            We will see couple of example of both operator in this article, to
+            understand difference between them much better.
+          </p>
+          <p>
+            Since JavaScript support both strict equality and type-converting
+            equality, it's important to know which operator is used for which
+            operation. As I said that, === takes type of variable in
+            consideration, while == make type correction based upon values of
+            variables, following are couple of more differences between "==" and
+            "===" operator in JavaScript programming language :
+          </p>
+          <p>
+            "==" operator is known as type coercion operator and anytime if both
+            values are same and compared using ==operator, type coercion
+            happens. On the other hand === is known as strictly equality
+            operator. It's much similar Java's equality operator (==), which
+            gives compilation error if you compare two variables, whose types
+            are not compatible to each other. In fact, you should always use
+            "===" operator for comparing variables or just for any comparison.
+          </p>
+          <p>
+            When we compare two variables of different type e.g. a boolean with
+            a string or a number with String using == operator, it automatically
+            converts one type into another and return value based upon content
+            equality. This will be much clear with following example of == and
+            === operator in JavaScript :
+          </p>
+          <pre><code>
     0 == false   /* true, because false is equivalent of 0 */
     0 === false  /* false, because both operands are of different type */
     2 == "2"     /* true, auto type coercion, string converted into number */
     2 === "2"    /* false, since both operands are not of same type */
-
                 </code></pre>
-            </section>
-
-            <section class="main-section" id="Closure">
-                <header>What is a Closure? </header>
-                <p>A closure is the combination of a function bundled together (enclosed) with references to its surrounding state (the lexical environment). In other words, a closure gives you access to an outer function’s scope from an inner function. In JavaScript, closures are created every time a function is created, at function creation time. <br/> <br/>
-                To use a closure, define a function inside another function and expose it. To expose a function, return it or pass it to another function.
-                The inner function will have access to the variables in the outer function scope, even after the outer function has returned.</p>
-                <p>In JavaScript, closures are the primary mechanism used to enable data privacy. When you use closures for data privacy, the enclosed variables are only in scope within the containing (outer) function. You can’t get at the data from an outside scope except through the object’s privileged methods. <br/> <br/> In JavaScript, any exposed method defined within the closure scope is privileged. <br/> <br/> The easiest example would be :</p>
-                <pre><code>
+        </section>
+        <section class="main-section" id="Closure">
+          <header>What is a Closure?</header>
+          <p>
+            A closure is the combination of a function bundled together
+            (enclosed) with references to its surrounding state (the lexical
+            environment). In other words, a closure gives you access to an outer
+            function’s scope from an inner function. In JavaScript, closures are
+            created every time a function is created, at function creation time.
+            <br />
+            <br />
+            To use a closure, define a function inside another function and
+            expose it. To expose a function, return it or pass it to another
+            function. The inner function will have access to the variables in
+            the outer function scope, even after the outer function has
+            returned.
+          </p>
+          <p>
+            In JavaScript, closures are the primary mechanism used to enable
+            data privacy. When you use closures for data privacy, the enclosed
+            variables are only in scope within the containing (outer) function.
+            You can’t get at the data from an outside scope except through the
+            object’s privileged methods. <br />
+            <br />
+            In JavaScript, any exposed method defined within the closure scope
+            is privileged. <br />
+            <br />
+            The easiest example would be :
+          </p>
+          <pre><code>
     var passed = 3;
 
     var addTo = function() {
@@ -168,8 +399,11 @@
 
     console.log(addTo(3));  /* 5 */
                 </code></pre>
-                <p>Here is the same function using <span class="bold">ES2015</span> syntax:</p>
-                <pre><code>
+          <p>
+            Here is the same function using
+            <span class="bold">ES2015</span> syntax:
+          </p>
+          <pre><code>
     const passed = 3;
 
     const addTo = () => {
@@ -179,10 +413,12 @@
 
     console.log(addTo(3));  /* 5 */
                 </code></pre>
-            </section>
-        </main>
+        </section>
+      </main>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
-    <script>hljs.initHighlightingOnLoad();</script>
-</body>
+    <script>
+      hljs.initHighlightingOnLoad();
+    </script>
+  </body>
 </html>
