@@ -128,7 +128,7 @@
           </p>
           <pre><code> 
     /* let variable */  
-    let x; //undefined 
+    let x; // undefined 
     let name = "Lasha"; 
     
     /* declaring multiple values */  
@@ -173,12 +173,14 @@
           <pre><code> 
     /* global scope */ 
     let fruit = "apple";  
-    console.log(fruit);  /* apple */   
+    console.log(fruit);  // apple
+
     function getFruit() {     
-        /* fruit is accesable here */
-        console.log(fruit);  
+      /* fruit is accesable here */
+      console.log(fruit);  
     }  
-    getFruit(); /* apple */ 
+
+    getFruit(); // apple
             </code></pre>
           <p>
             Variables declared inside the functions become
@@ -191,13 +193,13 @@
                    
     function foo1() {
     /* local scope 1 */     
-        function foo2() {       
-            /* local scope 2 */
-        }  
+      function foo2() {       
+        /* local scope 2 */
+      }  
     }  
     /* global scope */  
     function foo3() {
-        /* local scope 3 */  
+      /* local scope 3 */  
     }  
     /* global scope */
 
@@ -262,12 +264,12 @@
     rand = Math.random(),
     obj = new Object();
 
-    myObj.type              = 'Dot syntax';
-    myObj['date created']   = 'String with space';
-    myObj[str]              = 'String value';
-    myObj[rand]             = 'Random Number';
-    myObj[obj]              = 'Object';
-    myObj['']               = 'Even an empty string';
+    myObj.type            = 'Dot syntax';
+    myObj['date created'] = 'String with space';
+    myObj[str]            = 'String value';
+    myObj[rand]           = 'Random Number';
+    myObj[obj]            = 'Object';
+    myObj['']             = 'Even an empty string';
     
     console.log(myObj);
     </code></pre>
@@ -306,9 +308,9 @@
             >
           </p>
           <pre><code>
-    const name1 = animes[0]; /* One Piece */
-    const name2 = animes[1]; /* Steins;Gate */
-    const name3 = animes[2]; /* Berserk */
+    const name1 = animes[0]; // One Piece
+    const name2 = animes[1]; // Steins;Gate
+    const name3 = animes[2]; // Berserk
                 </code></pre>
           <p>
             The <span class="bold">length</span> property of an array returns
@@ -316,7 +318,7 @@
           </p>
           <pre><code>
     const fruits = ["Banana", "Orange", "Apple", "Kiwi"];
-    fruits.length;   /* the length of fruits is 4 */
+    fruits.length;  // the length of fruits is 4 
                 </code></pre>
         </section>
         <section class="main-section" id="Comparison">
@@ -355,10 +357,10 @@
             === operator in JavaScript :
           </p>
           <pre><code>
-    0 == false   /* true, because false is equivalent of 0 */
-    0 === false  /* false, because both operands are of different type */
-    2 == "2"     /* true, auto type coercion, string converted into number */
-    2 === "2"    /* false, since both operands are not of same type */
+    0 == false   // true, because false is equivalent of 0
+    0 === false  // false, because both operands are of different type
+    2 == "2"     // true, auto type coercion, string converted into number
+    2 === "2"    // false, since both operands are not of same type
                 </code></pre>
         </section>
         <section class="main-section" id="Closure">
@@ -397,7 +399,7 @@
         return passed + inner;
     };
 
-    console.log(addTo(3));  /* 5 */
+    console.log(addTo(3));  // 5
                 </code></pre>
           <p>
             Here is the same function using
@@ -411,7 +413,7 @@
         return passed + inner;
     };
 
-    console.log(addTo(3));  /* 5 */
+    console.log(addTo(3));  // 5
                 </code></pre>
         </section>
       </main>
