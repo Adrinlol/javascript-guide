@@ -4,7 +4,7 @@ JavaScriptGuide is an Open-source project aimed at helping junior Frontend Devel
 
 ## Live
 
-https://adrinlol.github.io/
+https://adrinlol.github.io/JavaScriptGuide/
 
 ## Table of contents
 
