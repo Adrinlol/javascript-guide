@@ -1,13 +1,20 @@
-# Adrinlol.github.io
-Front End Project [4/5] - Technical Documentation Page
+## JavaScriptGuide
 
-Technical Documentation Page for my freeCodeCamp front-end project.
+JavaScriptGuide is an Open-source project aimed at helping junior Frontend Developers ace their interview questions. If you are new to Frontend, or maybe you just want to revisit the basics, this guide is for you.
 
-### I decided to build this project, in order to help Front-End Developers ace their JavaScript interview questions.
+## Live
 
-### This includes topics such as: 
+https://adrinlol.github.io/JavaScriptGuide/
 
+## Table of contents
+
+This projects covers all the important concepts of JavaScript along with several examples.
+
+Some key topics included in this tutorial are:
+ 
+- Introduction
 - Variables
+- ECMAScript 6
 - Constants
 - Scope
 - Objects
@@ -15,12 +22,6 @@ Technical Documentation Page for my freeCodeCamp front-end project.
 - Comparison Operators
 - Closure
 
-### Using the CSS Grid Layout, I transformed this project into mobile friendly website.
-![ჯავა-მობ](https://user-images.githubusercontent.com/48876996/62488188-bb030d80-b7d4-11e9-8ed7-ae260abb7f28.JPG)
+## Contributing
 
-### I tried to gather as much information as I could for the topics that are essential, when it comes to being a JavaScript Developer. 
-
-
-![ჯავასკ](https://user-images.githubusercontent.com/48876996/62488190-bb030d80-b7d4-11e9-9c02-a3e85f49c1c1.JPG)
-
-_**This project was created during #100DaysOfCode challenge.**_
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
