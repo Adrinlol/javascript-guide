@@ -1,69 +1,73 @@
-    .main-body {
-    display:grid;
-    /* Take up a minimum of 300px*/ 
-    grid-template-columns: minmax(300px, auto) 1fr;
-    grid-template-areas: "navbar content";
-    grid-gap: 20px;
+.main-body {
+  display: grid;
+  grid-template-columns: minmax(300px, auto) 1fr;
+  grid-template-areas: "navbar content";
+  grid-gap: 20px;
+  padding-top: 3rem;
 }
 
 #navbar {
-    position: fixed;
-    margin-left: 10px;
+  position: fixed;
+  margin-left: 10px;
 }
 
 #navbar a {
-    /* Don't want them to be inline */
-    display: block;
-    border:1px solid #000;
-    padding: 5px;
-    margin:10px 0;
-    text-decoration: none;
-    color:#000; 
+  display: block;
+  border: 1px solid #000;
+  padding: 5px;
+  margin: 10px 0;
+  text-decoration: none;
+  color: #000;
 }
 
 #main-doc {
-    grid-area: content;
+  grid-area: content;
+  padding-right: 3rem;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .bold {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 ul > li {
-    margin:8px 0;
+  margin: 8px 0;
 }
 
 header {
-    font-size: 1.5em;
-    font-weight: bold;
-    margin:10px 0px;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 10px 0px;
 }
 
 code {
-    background-color:#ddd;
-    display: block;
-    margin:15px 5px;
-    padding: 15px;
-    border-radius: 10px;
-    line-height: 20px;
+  background-color: #ddd;
+  display: block;
+  margin: 15px 5px;
+  padding: 15px;
+  border-radius: 10px;
+  line-height: 20px;
 }
 
-/* Media query */
 @media screen and (max-width: 750px) {
-    .main-body {
-        grid-template-columns: 1fr;
-        grid-template-areas: "navabar" "content";
-    }
-    
-    #navbar {
-        position: inherit;
-    }
+  .main-body {
+    grid-template-columns: 1fr;
+    grid-template-areas: "navabar" "content";
+  }
+
+  #navbar {
+    position: inherit;
+    padding: 0 3rem;
+  }
+
+  #main-doc {
+    padding: 0 3rem;
+  }
 }
