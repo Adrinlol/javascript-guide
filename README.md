@@ -3,11 +3,11 @@
 
 ## javascript-guide
 
-JavaScript guide is an Open-source project aimed at helping junior Frontend Developers ace their interview questions. If you are new to Frontend, or maybe you just want to revisit the basics, this guide is for you.
-
-![ezgif com-gif-maker](https://user-images.githubusercontent.com/48876996/102694409-4d754700-423a-11eb-9615-af0f6e70d450.gif)
+JavaScript guide is an open source project aimed at helping junior Frontend Developers ace their interview questions. If you are new to Frontend, or maybe you just want to revisit the basics, this guide is for you.
 
 ## Demo
+
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/48876996/102694409-4d754700-423a-11eb-9615-af0f6e70d450.gif)
 
 Check the live demo here 👉️ https://adrinlol.github.io/javascript-guide/
 
