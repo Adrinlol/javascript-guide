@@ -1,4 +1,4 @@
-## javascript-guide <img height="60" align="center" src="https://img.icons8.com/color/344/javascript.png">
+## JavaScript Guide <img height="60" align="center" src="https://img.icons8.com/color/344/javascript.png">
 
 JavaScript guide is an open source project aimed at helping junior Frontend Developers ace their interview questions. If you are new to Frontend, or maybe you just want to revisit the basics, this guide is for you. 
 
